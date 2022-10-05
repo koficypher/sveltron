@@ -1,3 +1,4 @@
+// import adapter from '@sveltejs/adapter-auto';
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 
@@ -14,9 +15,6 @@ const config = {
 			fallback: null,
 			precompress: false
 		}),
-
-		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte'
 	}
 };
 

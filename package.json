@@ -6,7 +6,7 @@
     "clean": "rimraf dist pre-dist package-win installers",
     "prestart": "npm run clean",
     "prebuild": "npm run clean",
-    "electron": "wait-on http://localhost:3000 && cross-env ELECTRON_IS_DEV=true electron .",
+    "electron": "wait-on http://localhost:5173 && cross-env ELECTRON_IS_DEV=true electron .",
     "compile-tsc": "tsc && npm run electron",
     "start": "concurrently -k \"npm run svelte:dev\" \"npm run compile-tsc\"",
     "svelte:dev": "cd renderer && npm run dev",

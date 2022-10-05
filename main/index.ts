@@ -21,7 +21,7 @@ function createWindow() {
 
   if (isDev) {
     // and load the angular url of the app.
-    mainWindow.loadURL('http://localhost:3000');
+    mainWindow.loadURL('http://localhost:5173');
 
     // Open the DevTools.
     mainWindow.webContents.openDevTools();
